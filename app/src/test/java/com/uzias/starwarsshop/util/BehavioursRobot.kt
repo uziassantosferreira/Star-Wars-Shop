@@ -6,6 +6,7 @@ import com.uzias.starwarsshop.core.presentation.*
 import com.uzias.starwarsshop.core.util.MockitoHelpers.oneTimeOnly
 import org.mockito.Mockito.inOrder
 
+
 class BehavioursRobot
 private constructor(private val target: Any) {
 
@@ -132,5 +133,6 @@ private constructor(private val target: Any) {
             return BehavioursRobot(target)
         }
     }
+
 
 }

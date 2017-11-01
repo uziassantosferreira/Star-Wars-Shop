@@ -1,5 +1,7 @@
 package com.uzias.starwarsshop.core.networking.di
 
+import com.uzias.starwarsshop.products.data.repository.datasource.networking.ProductsApi
+import com.uzias.starwarsshop.transactions.data.datasource.networking.TransactionsApi
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -33,4 +35,9 @@ class NetworkModuleTest {
             .baseUrl(baseUrl)
             .build()
 
+    @Provides fun providesProductsApi(retrofit: Retrofit): ProductsApi
+            = retrofit.create(ProductsApi::class.java)
+
+    @Provides fun providesTransactionsApi(retrofit: Retrofit): TransactionsApi
+            = retrofit.create(TransactionsApi::class.java)
 }
