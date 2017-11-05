@@ -1,3 +1,5 @@
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Star%20wars%20shop-green.svg?style=flat )]( https://android-arsenal.com/details/1/6395 )
+
 Supported language: <img src="showcase/uk_flag.png" width=20>
 
 # Summary
